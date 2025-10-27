@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saksham Ahuja | Portfolio</title>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #f5f7fb;
+      color: #1e1e1e;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #002b5b;
+      color: #fff;
+      padding: 15px 5%;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .navbar a:hover {
+      color: #ffd700;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 80px 10%;
+      background: linear-gradient(180deg, #eef4ff, #fff);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #002b5b;
+    }
+    .hero h3 {
+      color: #0056b3;
+    }
+    .hero p {
+      color: #444;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .hero .btn {
+      display: inline-block;
+      background: #0056b3;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 10px;
+      transition: 0.3s;
+    }
+    .hero .btn:hover {
+      background: #003d80;
+      transform: translateY(-2px);
+    }
+
+    /* Section */
+    .section {
+      width: 80%;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    .section h2 {
+      color: #002b5b;
+      border-left: 5px solid #0056b3;
+      padding-left: 10px;
+    }
+
+    /* Skills */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .skills-list span {
+      background: #0056b3;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* Projects */
+    .project {
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+    }
+    .project a {
+      color: #0056b3;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background: #002b5b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        width: 90%;
+        padding: 25px;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <h1>Saksham Ahuja</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h2>👋 Hey, I'm Saksham</h2>
+    <h3>Aspiring Technology Consultant | Full Stack Developer | Problem Solver</h3>
+    <p>
+      I’m a Computer Science student at Graphic Era University, passionate about
+      creating impactful digital solutions through clean code, design, and modern
+      technology.
+    </p>
+    <div>
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="Saksham_1.pdf" download class="btn" style="background:#28a745;">⬇️ Download Resume</a>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I enjoy solving problems using technology — from full-stack web applications to 
+      system-level C++ tools. I have experience in MERN stack, machine learning, and 
+      compiler design projects using Lex and Yacc. My goal is to combine software 
+      development with business insights to deliver efficient, scalable solutions.
+    </p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills-list">
+      <span>Python</span><span>C++</span><span>Java</span><span>JavaScript</span>
+      <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+      <span>SQL</span><span>TensorFlow</span><span>Keras</span><span>Git</span>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Health Appointment System</h3>
+      <p>MERN Stack web app for managing doctor-patient appointments.</p>
+      <a href="https://saksham2907.github.io/Health-Appointment-System/" target="_blank">Live Demo</a>
+    </div>
+
+    <div class="project">
+      <h3>Movie Recommendation System</h3>
+      <p>Python Flask app suggesting movies using cosine similarity.</p>
+      <a href="https://saksham2907.github.io/Movie-Recommendation-System/" target="_blank">Live Demo</a>
+    </div>
+
+    <div class="project">
+      <h3>Parallel Encryption and Decryption</h3>
+      <p>C program using multithreading and multiprocessing for file encryption.</p>
+      <a href="https://saksham2907.github.io/Parallel-Encryption-Decryption/" target="_blank">Demo</a>
+    </div>
+
+    <div class="project">
+      <h3>Automatic C-Code Generator</h3>
+      <p>Lex and Yacc-based pseudocode to C converter with error detection.</p>
+      <a href="https://saksham2907.github.io/Automatic-C-Code-Generator/" target="_blank">Demo</a>
+    </div>
+
+    <div class="project">
+      <h3>Tourism Website</h3>
+      <p>Interactive travel website using HTML, CSS, and JavaScript.</p>
+      <a href="https://saksham2907.github.io/Tourism-website/" target="_blank">Demo</a>
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>AWS Academy Cloud Foundations</li>
+      <li>Meta Front-End Developer (Coursera)</li>
+      <li>freeCodeCamp: Responsive Web Design</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sakshamahuja2907@gmail.com">sakshamahuja2907@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/saksham-ahuja-463175296" target="_blank">linkedin.com/in/saksham-ahuja</a></p>
+    <p>GitHub: <a href="https://github.com/Saksham2907" target="_blank">github.com/Saksham2907</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Saksham Ahuja | Built with ❤️ using HTML & CSS</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
+</body>
+</html>
